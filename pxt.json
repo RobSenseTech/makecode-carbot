@@ -1,5 +1,5 @@
 {
-    "name": "MicrobitSmartCart-2A-V1",
+    "name": "Microbit-carbot-V1",
     "description": "",
     "dependencies": {
         "core": "*",
