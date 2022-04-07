@@ -6,7 +6,7 @@
 * 打开 [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * 点击 **新项目**
 * 点击齿轮图标菜单下的 **扩展**
-* 搜索 **https://github.com/RobSenseTech/makecode-carbot** 并导入
+* 搜索 **https://gitee.com/zhoushanjinjie/makecode-carbot.git** 并导入
 
 ## 编辑此项目 
 
@@ -14,7 +14,7 @@
 
 * 打开 [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * 点击 **导入**，然后点击 **导入 URL**
-* 粘贴 **https://github.com/RobSenseTech/makecode-carbot** 并点击导入
+* 粘贴 **https://gitee.com/zhoushanjinjie/makecode-carbot.git** 并点击导入
 
 ## 积木块预览
 
