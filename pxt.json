@@ -1,6 +1,7 @@
 {
     "name": "MicrobitSmartCar-2A-V1",
     "description": "carbot",
+    "license": "MIT",
     "dependencies": {
         "core": "*",
         "radio": "*",
