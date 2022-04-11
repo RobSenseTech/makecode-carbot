@@ -210,7 +210,7 @@ namespace microbit_CAR{
 
         switch (index) {
             case LineSensorIndex.LEFT: {
-                if (0 == pins.digitalReadPin(DigitalPin.P2)) {
+		if (0 == pins.digitalReadPin(DigitalPin.P2)) {
                     if (state == LineState.WHITE) {
                         temp = true;
                     }
