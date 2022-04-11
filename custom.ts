@@ -209,22 +209,8 @@ namespace microbit_CAR{
         let temp: boolean = false;
 
         switch (index) {
-            // case LineSensorIndex.LEFT: {
-            //     if (0 == pins.digitalReadPin(DigitalPin.P2)) {
-            //         if (state == LineState.WHITE) {
-            //             temp = true;
-            //         }
-            //     }
-            //     else {
-            //         if (state == LineState.BLACK) {
-            //             temp = true;
-            //         }
-            //     }
-            //     break;
-            // }
-
             case LineSensorIndex.LEFT: {
-                if (pins.analogReadPin(DigitalPin.P2) > 500) {
+                if (0 == pins.digitalReadPin(DigitalPin.P2)) {
                     if (state == LineState.WHITE) {
                         temp = true;
                     }
@@ -236,7 +222,7 @@ namespace microbit_CAR{
                 }
                 break;
             }
-                
+
             case LineSensorIndex.RIGHT: {
                 if (0 == pins.digitalReadPin(DigitalPin.P1)) {
                     if (state == LineState.WHITE) {
