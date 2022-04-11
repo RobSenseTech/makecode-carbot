@@ -7,7 +7,7 @@ Copyright (C): 2022, RobSense
 #include <vector>
 #include "ReceiverIR.h"
 using namespace pxt;
-typedef vector<Action> vA;
+typedef std::vector<Action> vA;
 
 enum class RemoteButton {
       SET = 0x15,
