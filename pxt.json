@@ -1,7 +1,6 @@
 {
     "name": "MicrobitSmartCar-2A-V1",
     "description": "carbot",
-    "version": "1.0.01",
     "dependencies": {
         "core": "*",
         "radio": "*",
@@ -13,11 +12,6 @@
         "README.md",
         "custom.ts",
         "enums.d.ts",
-        "microbit_IR.ts",
-        "microbit_IR.cpp",
-        "ReceiverIR.cpp",
-        "ReceiverIR.h",
-        "RemoteIR.h",
         "microbit_RGB.ts",
         "sendbuffer.asm"
     ],
