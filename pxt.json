@@ -1,5 +1,5 @@
 {
-    "name": "Microbit-carbot-V1",
+    "name": "MicrobitSmartCar-2A-V1",
     "description": "carbot",
     "dependencies": {
         "core": "*",
