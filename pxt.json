@@ -1,6 +1,6 @@
 {
     "name": "Microbit-carbot-V1",
-    "description": "",
+    "description": "carbot",
     "dependencies": {
         "core": "*",
         "radio": "*",
