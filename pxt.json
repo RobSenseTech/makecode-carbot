@@ -1,6 +1,7 @@
 {
     "name": "MicrobitSmartCar-2A-V1",
     "description": "carbot",
+    "version": "1.0.01",
     "dependencies": {
         "core": "*",
         "radio": "*",
