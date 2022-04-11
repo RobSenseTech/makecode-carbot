@@ -23,7 +23,7 @@
 此图像显示主分支中最后一次提交的块代码。
 此图像可能需要几分钟才能刷新。
 
-![块的渲染视图](https://github.com/RobSenseTech/makecode-carbot/master/.github/makecode/blocks.png)
+![块的渲染视图](https://github.com/RobSenseTech/makecode-carbot/blob/master/.github/makecode/blocks.png)
 
 #### 元数据（用于搜索、渲染）
 
