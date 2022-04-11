@@ -13,11 +13,6 @@
         "README.md",
         "custom.ts",
         "enums.d.ts",
-        "microbit_IR.ts",
-        "microbit_IR.cpp",
-        "ReceiverIR.cpp",
-        "ReceiverIR.h",
-        "RemoteIR.h",
         "microbit_RGB.ts",
         "sendbuffer.asm"
     ],
