@@ -3,12 +3,12 @@ Copyright (C): 2022, RobSense
 */
 
 #include "pxt.h"
-#include <iostream>
 #include <map>
 #include <vector>
 #include "ReceiverIR.h"
 using namespace pxt;
-typedef std::vector<Action> vA;
+//typedef std::vector<Action> vA;
+typedef std::vector vA;
 
 enum class RemoteButton {
       SET = 0x15,
