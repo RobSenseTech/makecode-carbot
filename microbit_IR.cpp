@@ -1,5 +1,5 @@
 /*
-Copyright (C): 2022, RobSense
+Copyright (C): 2020, liuyeshu
 */
 
 #include "pxt.h"
@@ -7,8 +7,7 @@ Copyright (C): 2022, RobSense
 #include <vector>
 #include "ReceiverIR.h"
 using namespace pxt;
-typedef std::vector<Action> vA;
-
+typedef vector<Action> vA;
 
 enum class RemoteButton {
       SET = 0x15,
