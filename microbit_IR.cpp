@@ -96,7 +96,7 @@ namespace microbit_IR {
 
   //%
   void onPressEvent(RemoteButton btn, Action body) {
-    actions[btn].push_back(body);
+
   }
 
 }
