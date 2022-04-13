@@ -25,7 +25,7 @@ namespace microbit_IR {
     //% block="按键 |%btn| 按下时"
     //% color="#99CC32"
     //% shim=microbit_IR::onPressEvent
-    export function onPressEvent(btn: RemoteButton, body:Action): void {
+    export function onPressEvent(btn: RemoteButton): void {
       return
     }
 
