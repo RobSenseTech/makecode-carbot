@@ -2,11 +2,13 @@
 Copyright (C): 2022, RobSense
 */
 
+
 #include "pxt.h"
 #include <map>
 #include <vector>
 #include "ReceiverIR.h"
 using namespace pxt;
+typedef vector<Action> vA;
 
 enum class RemoteButton {
       SET = 0x15,
@@ -55,6 +57,7 @@ enum class Pins{
 };
 
 namespace microbit_IR {
+  map<RemoteButton, vA> actions;
   map<RemoteButton, uint32_t> lastact;
   Timer tsb;
   uint8_t buf[32];
@@ -62,14 +65,16 @@ namespace microbit_IR {
   ReceiverIR *rx;
   RemoteIR::Format fmt = RemoteIR::UNKNOWN;
 
-  
+  void cA(vA runner){for(int i=0;i<runner.size();i++){runAction0(runner[i]);} }
 
   void onReceivable(){
     int x = rx->getData(&fmt, buf, 32);
     //uBit.serial.send(buf, 4);
+    if(actions.find((RemoteButton)buf[2]) == actions.end()) return;
     now = tsb.read_ms();
     if(now - lastact[(RemoteButton)buf[2]] < 100) return;
     lastact[(RemoteButton)buf[2]] = now;
+    cA(actions[(RemoteButton)buf[2]]);
   }
 
 
@@ -90,8 +95,8 @@ namespace microbit_IR {
   }
 
   //%
-  void onPressEvent(RemoteButton btn) {
-
+  void onPressEvent(RemoteButton btn, Action body) {
+    actions[btn].push_back(body);
   }
 
 }
