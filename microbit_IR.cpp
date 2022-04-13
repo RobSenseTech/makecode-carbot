@@ -7,7 +7,6 @@ Copyright (C): 2022, robsense
 #include <vector>
 #include "ReceiverIR.h"
 
- vector<Action> vA;
 
 using namespace pxt;
 
@@ -59,7 +58,7 @@ enum class Pins{
 };
 
 namespace microbit_IR {
-  map<RemoteButton, vA> actions;
+  map<RemoteButton, vector<Action>> actions;
   map<RemoteButton, uint32_t> lastact;
   Timer tsb;
   uint8_t buf[32];
@@ -67,7 +66,7 @@ namespace microbit_IR {
   ReceiverIR *rx;
   RemoteIR::Format fmt = RemoteIR::UNKNOWN;
 
-  void cA(vA runner){for(int i=0;i<runner.size();i++){runAction0(runner[i]);} }
+  void cA(vector<Action> runner){for(int i=0;i<runner.size();i++){runAction0(runner[i]);} }
 
   void onReceivable(){
     int x = rx->getData(&fmt, buf, 32);
