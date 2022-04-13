@@ -7,7 +7,7 @@ Copyright (C): 2020, liuyeshu
 #include <vector>
 #include "ReceiverIR.h"
 using namespace pxt;
-typedef vector<Action> vA;
+typedef vector vA;
 
 enum class RemoteButton {
       SET = 0x15,
