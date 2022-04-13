@@ -7,7 +7,7 @@ Copyright (C): 2022, robsense
 #include <vector>
 #include "ReceiverIR.h"
 
-typedef std::vector<Action> & vA;
+ vector<Action> vA;
 
 using namespace pxt;
 
