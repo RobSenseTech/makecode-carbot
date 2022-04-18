@@ -210,7 +210,8 @@ namespace microbit_CAR{
 
         switch (index) {
             case LineSensorIndex.LEFT: {
-		if (0 == pins.digitalReadPin(DigitalPin.P2)) {
+		pins.setPull(DigitalPin.P2, PinPullMode.PullDown);
+		if (0 == pins.analogReadPin(AnalogPin.P2)) {
                     if (state == LineState.WHITE) {
                         temp = true;
                     }
