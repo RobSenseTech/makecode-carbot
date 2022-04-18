@@ -225,6 +225,7 @@ namespace microbit_CAR{
             }
 
             case LineSensorIndex.RIGHT: {
+		pins.setPull(DigitalPin.P1, PinPullMode.PullDown);
                 if (pins.analogReadPin(AnalogPin.P1) > 500) {
                     if (state == LineState.WHITE) {
                         temp = true;
